@@ -78,19 +78,19 @@ def HospitalManagementSystem():
             print(f'Contact: {self.contact}')
             
     # Create Hospital Object
-    hospital = Hospital('ABC Hospital', 'XYZ City', '1234567890')   
+    hospital = Hospital('Getrude Hospital', 'Nairobi City', '0701004028')   
     print('Hospital Details:')
     hospital.display_hospital()
     print()
 
     # Create Patient Object
-    patient = Patient('Alice', 'XYZ City', '9876543210', 'P001', 25)
+    patient = Patient('Alice', 'Nairobi City', '0721711933', 'P001', 25)
     print('Patient Details:')
     patient.display_patient()
     print()
 
     # Create Doctor Object
-    doctor = Doctor('Dr. Bob', 'XYZ City', '9876543210', 'D001', 'Cardiologist')
+    doctor = Doctor('Dr. Bob', 'Nairobi City', '0720704028', 'D001', 'Cardiologist')
     print('Doctor Details:')
     doctor.display_doctor()
     print()
