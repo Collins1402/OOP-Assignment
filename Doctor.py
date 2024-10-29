@@ -1,3 +1,14 @@
+class Hospital:
+    def __init__(self, name, location, contact):
+        self.name = name
+        self.location = location
+        self.contact = contact
+
+    def display_hospital(self):
+        print(f'Hospital Name: {self.name}')
+        print(f'Location: {self.location}')
+        print(f'Contact: {self.contact}')
+        
 class Doctor(Hospital):
         def __init__(self, name, location, contact, doctor_id, specialization):
             super().__init__(name, location, contact)

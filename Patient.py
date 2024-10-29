@@ -1,3 +1,15 @@
+# Define Hospital
+class Hospital:
+    def __init__(self, name, location, contact):
+        self.name = name
+        self.location = location
+        self.contact = contact
+
+    def display_hospital(self):
+        print(f'Hospital Name: {self.name}')
+        print(f'Location: {self.location}')
+        print(f'Contact: {self.contact}')
+
 class Patient(Hospital):
         def __init__(self, name, location, contact, patient_id, age):
             super().__init__(name, location, contact)
@@ -18,4 +30,3 @@ print('Patient Details:')
 
 patient.display_patient()
 print()
-

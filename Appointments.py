@@ -1,4 +1,15 @@
-class appointments(Hospital)
+class Hospital:
+    def __init__(self, name, location, contact):
+        self.name = name
+        self.location = location
+        self.contact = contact
+
+    def display_hospital(self):
+        print(f'Hospital Name: {self.name}')
+        print(f'Location: {self.location}')
+        print(f'Contact: {self.contact}')
+        
+class appointments(Hospital):
     def __init__(self, name, location, contact, patient_id, age, doctor_id, specialization, appointment_date, appointment_time):
         super().__init__(name, location, contact)
         self.patient_id = patient_id
